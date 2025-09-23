@@ -33,6 +33,7 @@ apt install -qqy --no-install-recommends \
     fastfetch \
     adb \
     curl \
+    wget \
     wpasupplicant
 apt clean
 rm -rf /var/lib/apt/lists/*
