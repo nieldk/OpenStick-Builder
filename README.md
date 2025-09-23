@@ -11,7 +11,7 @@
 ## 构建指南
 
 ### 本地构建
-已在 **Ubuntu 22.04** 上测试通过。
+已在 **Debian 13** 上测试通过。
 
 1. 克隆仓库：
 ```bash
@@ -22,7 +22,7 @@ cd OpenStick-Builder/
 #### 快速构建
 
 ```bash
-sudo ./build.sh
+sudo ./build.sh 2>&1 | tee build.log
 ```
 
 #### 详细构建步骤
