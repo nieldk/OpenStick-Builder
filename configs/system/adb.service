@@ -1,0 +1,15 @@
+[Unit]
+Description=Android Debug Bridge (ADB) Server
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/adb start-server
+ExecStop=/usr/bin/adb kill-server
+Restart=on-failure
+RestartSec=5s
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
