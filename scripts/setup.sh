@@ -32,6 +32,7 @@ apt install -qqy --no-install-recommends \
     wireguard-tools \
     fastfetch \
     adb \
+    curl \
     wpasupplicant
 apt clean
 rm -rf /var/lib/apt/lists/*
